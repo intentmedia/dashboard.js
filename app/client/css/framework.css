@@ -1,0 +1,63 @@
+/* Clearfix */
+
+.clearfix:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* Global */
+
+body, html {
+  background: #000;
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: #ccc;
+  font: normal 12px/14px Helvetica, Arial, sans-serif;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+hr {
+  display: block;
+  border: 0;
+  border-top: 1px dotted #ccc;
+  height: 1px;
+  margin: 20px 0;
+}
+
+a {
+  color: #069;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #024;
+}
+
+.hidden {
+  display: none;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

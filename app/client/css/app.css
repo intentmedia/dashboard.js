@@ -1,0 +1,286 @@
+/***** iFrame Layout *****/
+
+#iframes {
+  height: 99.5%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#iframes table {
+  height: 100%;
+  width: 100%;
+}
+
+#iframes table td {
+  height: 100%;
+}
+
+#iframes iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/***** Dashboard layout *****/
+
+#services {
+  background: #000;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: #eee;
+  cursor: pointer;
+  font: normal 13px/20px Helvetica, Arial, sans-serif;
+  margin: 10px 10px 0;
+  outline: none;
+  padding: 5px 28px 5px 10px;
+  width: 250px;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 999;
+}
+
+#services:hover,
+#services:focus {
+  background: #111;
+  border-color: #666;
+  color: #fff;
+}
+
+#services-dropdown-icon {
+  color: #999;
+  position: relative;
+  left: -34px;
+}
+
+#chart {
+  margin: 10px 10px 0;
+}
+
+/* Controls */
+
+#controls {
+  left: 274px;
+  position: absolute;
+  top: 8px;
+}
+
+#controls .option {
+  float: left;
+  margin-right: 15px;
+}
+
+#controls .option label {
+  color: #777;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+#controls .option select {
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  background: #333;
+  border-radius: 2px;
+  border: 1px solid #666;
+  height: 15px;
+  position: relative;
+  width: 150px;
+}
+
+.slider .gutter {
+  cursor: pointer;
+  height: 15px;
+  left: 25px;
+  position: absolute;
+  top: 0;
+  width: 100px;
+  z-index: 100;
+}
+
+.slider a {
+  background: #ccc;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 3px 5px rgba(255, 255, 255, 0.5) inset;
+  outline: none;
+  display: block;
+  height: 15px;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+}
+
+.slider a:hover,
+.slider a:focus {
+  background: #eee;
+}
+
+.option-filter {
+  position: relative;
+}
+
+.option-filter .icon-search {
+  color: #999;
+  font-size: 16px;
+  left: 9px;
+  position: absolute;
+  top: 8px;
+}
+
+.option-filter input {
+  background: #333;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: #eee;
+  font: normal 16px/20px Helvetica, Arial, sans-serif;
+  outline: none;
+  padding: 5px 10px 5px 28px;
+  width: 150px;
+}
+
+.option-filter input:hover,
+.option-filter input:focus {
+  background: #444;
+  border-color: #666;
+  color: #fff;
+}
+
+.option-filter .icon-remove {
+  color: #555;
+  cursor: pointer;
+  display: none;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+.option-filter .icon-remove:hover {
+  color: #ccc;
+}
+
+/* Loading */
+
+#loading {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+#loading .horizon {
+  margin: -50px auto;
+  position: relative;
+  text-align: center;
+  top: 50%;
+}
+
+#loading-message {
+  background: url(/images/loading.gif) no-repeat scroll 20px 20px #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  color: #111;
+  display: inline-block;
+  font: bold 15px/15px Helvetica, Arial, sans-serif;
+  padding: 20px 24px 20px 42px;
+}
+
+/* StackChart */
+
+#stackChart {
+  position: relative;
+}
+
+#stackChart .tick {
+  position: absolute;
+}
+
+#stackChart .x_axis {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+#stackChart .x_axis .tick {
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  width: 100px;
+}
+
+#stackChart .x_axis .tick span {
+  bottom: -20px;
+  color: #999;
+  font: bold 13px/13px 'Helvetica Neue', Helvetica, sans-serif;
+  left: -50px;
+  position: absolute;
+  text-align: center;
+  width: 100px;
+}
+
+#stackChart .x_axis .tick span.bright {
+  color: #eee;
+}
+
+#stackChart .current_y_axis {
+  background: #fff;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+
+#stackChart .y_axis {
+  position: absolute;
+  right: 10px;
+  text-align: left;
+  top: 0;
+  width: 200px;
+}
+
+#stackChart .y_axis .tick,
+#stackChart .y_axis_left .tick {
+  background: #000;
+  border-radius: 3px;
+  display: block;
+  font: bold 12px/12px 'Helvetica Neue', Helvetica, sans-serif;
+  margin-top: -4px;
+  padding: 3px 5px;
+  white-space: nowrap;
+}
+
+#stackChart .y_axis .amount {
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+#stackChartTotal {
+  color: #999;
+  font: bold 16px/17px 'Helvetica Neue', Helvetica, sans-serif;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  width: 214px;
+}
+
+#stackChartTotal .amount {
+  color: #fff;
+  font-weight: bold;
+}
+
+#stackChartTotal .timestamp {
+  font: normal 13px/17px 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#stackChartTotal .timestamp strong {
+  color: #fff;
+}

@@ -1,0 +1,13 @@
+<select id="services">
+  {{#services}}
+    <option name="{{id}}" {{#active}}selected{{/active}}>{{name}}</option>
+  {{/services}}
+</select>
+<div id="controls"></div>
+<div id="chart"></div>
+<div id="messages"></div>
+<div id="loading">
+  <div class="horizon">
+    <div id="loading-message">Loading...</div>
+  </div>
+</div>
