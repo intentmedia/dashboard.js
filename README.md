@@ -2,6 +2,8 @@
 
 A dashboard framework written using Node.js and Redis for data storage.
 
+![Screenshot](http://i.imgur.com/nEDTuC6.png)
+
 ### Why does this exist?
 
 This was written to display real-time company metrics using portable hardware and a couple large plasma displays. We originally tried using [Dashing](https://github.com/Shopify/dashing), which is nice for displaying many simple data points on one page, but we wanted to display complicated data on many pages. Another major difference is that Dashing uses Ruby, Sinatra and Batman.js (and Coffeescript), whereas Dashboard.js uses Node, Express, and a custom JavaScript framework (and no Coffeescript).
@@ -28,8 +30,7 @@ git clone git@github.com:intentmedia/dashboard.js.git
 cd dashboard.js
 # Install node dependencies
 npm install
-# Create the services directory and copy over
-# the example services to get started:
+# Create the services directory and copy over the example services to get started:
 cp -R app/example_services app/services
 ```
 
