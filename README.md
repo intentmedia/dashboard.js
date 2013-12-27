@@ -57,8 +57,7 @@ Dashboard.js services are encapsulated in the sense that server-side code, clien
 app/
   services/
     service_id/
-      public/            # static assets, available at
-                         # /services/[service_id]/blah.jpg
+      public/            # static assets, available at /services/[service_id]/blah.jpg
       client.js          # all client-side service code
       server.js          # all server-side service code
       [foo].css          # bundled and loaded after the framework CSS
