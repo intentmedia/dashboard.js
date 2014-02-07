@@ -5,3 +5,4 @@ app/services
 node_modules
 public/bundled
 public/services
+npm-debug.log
