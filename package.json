@@ -24,6 +24,11 @@
     "redis": "*",
     "stompjs": "*",
     "time": "*",
-    "underscore": "*"
+    "underscore": "*",
+    "foreman": "0.0.26"
+  },
+  "scripts": {
+    "start": "node app/server/app.js",
+    "prestart": "grunt"
   }
 }

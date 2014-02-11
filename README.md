@@ -16,11 +16,11 @@ If you haven't installed [Homebrew](http://brew.sh) already, do that:
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 ```
 
-If you haven't installed [Node.js](http://nodejs.org/), [Redis](http://redis.io/), and [Grunt](http://gruntjs.com/) already, do that:
+If you haven't installed [Node.js](http://nodejs.org/), [Redis](http://redis.io/), [Grunt](http://gruntjs.com/), and [Foreman](https://github.com/strongloop/node-foreman) already, do that:
 
 ```sh
 brew install node redis
-npm -g install grunt-cli
+npm -g install grunt-cli foreman
 ```
 
 Install Dashboard.js:
@@ -36,17 +36,16 @@ cp -R app/example_services app/services
 
 ### Starting the Application
 
-In terminal window #1, start Redis, if it isn't already running:
+To start everything (including redis):
 
 ```sh
-redis-server
+nf start
 ```
 
-In terminal window #2, run Grunt and start the Node app:
+If you already have redis:
 
 ```sh
-grunt
-node app/server/app.js
+nf start web
 ```
 
 ### Service Design
