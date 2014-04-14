@@ -12,7 +12,7 @@
   "dependencies": {
     "cron": "*",
     "d3": "*",
-    "express": "*",
+    "express": "3.4.7",
     "grunt": "*",
     "grunt-contrib-jshint": "*",
     "grunt-contrib-concat": "*",
