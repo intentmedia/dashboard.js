@@ -200,6 +200,11 @@
   position: relative;
 }
 
+#stackChart svg {
+  height: 100%;
+  width: 100%;
+}
+
 #stackChart .tick {
   position: absolute;
 }
